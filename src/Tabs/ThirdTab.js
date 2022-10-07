@@ -1,4 +1,6 @@
 import React from "react";
+import "./ThirdTab.css";
+
 const ThirdTab = () => {
   return (
     <div className='ThirdTab'>
