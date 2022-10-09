@@ -24,15 +24,28 @@
     color: black;
 }
 
-header {
-    
+.header {
+    position: sticky;
+    top: 0;
+    transition: 0.5s;
+    z-index: 999;
     img {
-        position: sticky;
-        position: -webkit-sticky;
-            top: 0;
+        
         width: 150px;
         margin-top: 26px;
         margin-left: 68px;
+
+    }
+}
+.Shape1 {
+    position: sticky;
+    top: 740px;
+    transition: 0.5s;
+    z-index: 999;
+
+    img {
+        margin-left: 70px;
+        width: 58px;
     }
 }
 
@@ -45,8 +58,7 @@ header {
 .button,
 .Pink_sperm,
 .Layer4C,
-.Layer4,
-.Shape1 {
+.Layer4 {
     position: absolute;
 }
 
@@ -132,14 +144,7 @@ animation: Layer4 15s ease 0s infinite normal none;
     }
 }
 
-.Shape1 {
-    top: 740px;
-    left: 70px;
 
-    img {
-        width: 58px;
-    }
-}
 
 .hello {
     font-family: 'DINpro';

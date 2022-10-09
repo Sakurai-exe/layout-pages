@@ -1,20 +1,23 @@
 import React, { useState } from "react";
-import "./Tabs.scss";
+import Style from "./Tabs.module.scss";
 import FirstTab from "./FirstTab";
 import SecondTab from "./SecondTab";
 import ThirdTab from "./ThirdTab";
 import FourthTab from "./FourthTab";
+
 const Tabs = () => {
 const [index, setIndex] = useState(0);
   const [touchStart, setTouchStart] = useState(null);
   const [touchEnd, setTouchEnd] = useState(null);
-  const minSwipeDistance = 50;
+  const minSwipeDistance = 90;
+  
 const downIndex = () => {
      if (index > -3 && index < 1) {
        setIndex(index - 1);
      } else {
        setIndex(index);
      }
+  console.log(index);
    };
   const upIndex = () => {
     if (index > -4 && index < 0) {
@@ -22,6 +25,7 @@ const downIndex = () => {
     } else {
       setIndex(index);
     }
+    console.log(index);
   };
   const onTouchStart = (e) => {
     setTouchEnd(null); // otherwise the swipe is fired even with usual touch events
@@ -38,13 +42,13 @@ const downIndex = () => {
   let style = { transform: `translateX(calc(${index}*(100%))` };
   return (
     <div
-      className='Tabs'
+      className={Style.Tabs}
       onTouchStart={onTouchStart}
       onTouchMove={onTouchMove}
       onTouchEnd={onTouchEnd}
       style={style}
     >
-      <FirstTab event={downIndex} />
+      <FirstTab event={downIndex} coefficient={index} />
       <SecondTab />
       <ThirdTab />
       <FourthTab />

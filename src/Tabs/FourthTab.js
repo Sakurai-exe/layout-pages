@@ -1,9 +1,9 @@
 import React from "react";
-import "./FourthTab.scss";
+import Style from "./FourthTab.module.scss";
 
 const FourthTab = () => {
   return (
-    <div className='FourthTab'>
+    <div className={Style.FourthTab}>
       <p>FourthTab!! Hurray!!</p>
     </div>
   );

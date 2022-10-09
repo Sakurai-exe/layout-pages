@@ -1,5 +1,5 @@
 import React from "react";
-import "./FirstTab.scss";
+import Style from "./FirstTab.module.scss";
 import Header from "../pics/FirstTab/global.png"
 import Layer7 from "../pics/FirstTab/Layer 7.png";
 import Layer5 from "../pics/FirstTab/Layer 5.png";
@@ -13,51 +13,52 @@ import Layer4C from "../pics/FirstTab/Layer 4 copy.png";
 import Layer4 from "../pics/FirstTab/Layer 4.png";
 import Shape1 from "../pics/FirstTab/Shape1.png";
 
-
 const FirstTab = (props) => {
+  let coefficientX = (-1) * props.coefficient;
+  let styleX = { transform: `translateX(calc(${coefficientX}*(100%))` };
   return (
-    <div className='FirstTab'>
-            <header>
-              <img src={Header} alt='header image' />
-            </header>
-      <div className='Layer7'>
+    <div className={Style.FirstTab}>
+      <div className={Style.header} style={styleX}>
+        <img src={Header} alt='header image' />
+      </div>
+      <div className={Style.Layer7}>
         <img src={Layer7} alt='background detail img' srcset='' />
       </div>
-      <div className='Layer5'>
+      <div className={Style.Layer5}>
         <img src={Layer5} alt='background detail img' srcset='' />
       </div>
-      <div className='Layer4C2'>
+      <div className={Style.Layer4C2}>
         <img src={Layer4C2} alt='background detail img' srcset='' />
       </div>
-      <div className='Pink_sperm1'>
+      <div className={Style.Pink_sperm1}>
         <img src={Pink_sperm1} alt='background detail img' srcset='' />
       </div>
-      <div className='Layer8'>
+      <div className={Style.Layer8}>
         <img src={Layer8} alt='background detail img' srcset='' />
       </div>
-      <div className='Bakti1'>
+      <div className={Style.Bakti1}>
         <img src={Bakti1} alt='background detail img' srcset='' />
       </div>
-      <div className='hello'>Привет, </div>
-      <div className='title'>
-        Это <span className='title__extraBold'>не</span>
+      <div className={Style.hello}>Привет, </div>
+      <div className={Style.title}>
+        Это <span className={Style.title__extraBold}>не</span>
         <br /> коммерческое задание
       </div>
-      <div className='button' onClick={props.event}>
+      <div className={Style.button} onClick={props.event}>
         <button>
           <img src={Btn} alt='btn img' />
         </button>
       </div>
-      <div className='Pink_sperm'>
+      <div className={Style.Pink_sperm}>
         <img src={Pink_sperm} alt='background detail img' srcset='' />
       </div>
-      <div className='Layer4C'>
+      <div className={Style.Layer4C}>
         <img src={Layer4C} alt='background detail img' srcset='' />
       </div>
-      <div className='Layer4'>
+      <div className={Style.Layer4}>
         <img src={Layer4} alt='background detail img' srcset='' />
       </div>
-      <div className='Shape1'>
+      <div className={Style.Shape1} style={styleX}>
         <img src={Shape1} alt='background detail img' srcset='' />
       </div>
     </div>
