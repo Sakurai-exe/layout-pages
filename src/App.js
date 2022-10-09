@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import './App.css';
+import './App.scss';
 import Tabs from './Tabs/Tabs';
 
 const App = () => {
