@@ -1,5 +1,4 @@
-
+### `git clone https://github.com/Sakurai-exe/layout-pages.git
+` склонировать репозиторий.
 ### `npm start` Для запуска приложения локально.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
