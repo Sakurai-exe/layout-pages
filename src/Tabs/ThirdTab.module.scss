@@ -1,8 +1,218 @@
+@font-face {
+    font-family: 'DINpro';
+    src: url(../fonts/DINPro.ttf) format('ttf'), url(../fonts/DINPro.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Gilroy-light';
+    src: url(../fonts/Gilroy-Light.ttf) format('ttf'), url(../fonts/Gilroy-Light.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Gilroy-Extra';
+    src: url(../fonts/Gilroy-Extrabold.ttf) format('ttf'), url(../fonts/Gilroy-Extrabold.woff) format('woff');
+}
+
 .ThirdTab {
-width: 100%;
-position: relative;
+    width: 100%;
+    position: relative;
     top: -200vh;
     left: 200%;
-        height: 100vh;
-        background-color: yellow;
+    height: 100vh;
+    background-image: url("../pics/ThirdTab/bg.png");
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    color: black;
+}
+
+.hello,
+.Brend,
+.leftBlock,
+.rightBlock,
+.Bottle,
+.Icon1,
+.Icon2,
+.Buble1,
+.Buble2,
+.Buble3,
+.Buble4,
+.Buble5,
+.Buble6,
+.Buble7,
+.Buble8,
+.Btn {
+    position: absolute;
+}
+
+.hello {
+    font-family: 'DINpro';
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    margin-top: 162px;
+    margin-left: 352px;
+    letter-spacing: 1.5px;
+}
+
+.Brend {
+    font-family: 'Gilroy-light';
+    font-size: 6rem;
+    text-transform: uppercase;
+    margin-top: 202px;
+    margin-left: 345px;
+    letter-spacing: 10px;
+
+    .Brend__XY {
+        font-family: 'Gilroy-Extra';
+        font-size: 6rem;
+        text-transform: uppercase;
+    }
+}
+
+.leftBlock {
+    font-family: 'Gilroy-light';
+    width: 400px;
+    height: 264px;
+    top: 378px;
+    left: 240px;
+    font-size: 1.4rem;
+    background-color: white;
+    line-height: 1.8rem;
+    border: 30px solid;
+    border-color: white;
+    border-radius: 40px;
+    padding-left: 80px;
+    padding-top: 20px;
+    padding-right: 25px;
+    -webkit-box-shadow: 0px 0px 100px -17px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 100px -17px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 100px -17px rgba(34, 60, 80, 0.2);
+}
+
+.rightBlock {
+    font-family: 'Gilroy-light';
+    width: 265px;
+    height: 150px;
+    top: 378px;
+    left: 680px;
+    font-size: 1.4rem;
+    background-color: white;
+    line-height: 1.8rem;
+    border: 25px solid;
+    border-color: white;
+    border-radius: 40px;
+    padding: 25px;
+    -webkit-box-shadow: 0px 0px 100px -17px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 100px -17px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 100px -17px rgba(34, 60, 80, 0.2);
+}
+
+.Bottle {
+    top: 80px;
+    left: 50px;
+
+    img {
+        width: 235px;
+    }
+}
+
+.Icon1 {
+    top: 354px;
+    left: 720px;
+
+    img {
+        width: 70px;
+    }
+}
+
+.Icon2 {
+    top: 346px;
+    left: 350px;
+
+    img {
+        width: 70px;
+    }
+}
+
+//////
+.Buble1 {
+    top: 210px;
+    left: 78px;
+
+    img {
+        width: 34px;
+    }
+}
+
+.Buble2 {
+    top: 315px;
+    left: 190px;
+
+    img {
+        width: 110px;
+    }
+}
+
+.Buble3 {
+    top: 64px;
+    left: 198px;
+
+    img {
+        width: 38px;
+    }
+}
+
+.Buble4 {
+    top: 590px;
+    left: 250px;
+
+    img {
+        width: 54px;
+    }
+}
+
+.Buble5 {
+    top: 154px;
+    left: 185px;
+
+    img {
+        width: 68px;
+    }
+}
+
+.Buble6 {
+    top: 700px;
+    left: 180px;
+
+    img {
+        width: 148px;
+    }
+}
+
+.Buble7 {
+    top: 452px;
+    left: 10px;
+
+    img {
+        width: 34px;
+    }
+}
+
+.Buble8 {
+    top: 552px;
+    left: 25px;
+
+    img {
+        width: 74px;
+    }
+}
+
+.Btn {
+    top: 562px;
+    left: 677px;
+
+    img {
+        width: 270px;
+    }
 }

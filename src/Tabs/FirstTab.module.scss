@@ -29,14 +29,16 @@
     top: 0;
     transition: 0.5s;
     z-index: 999;
+
     img {
-        
+
         width: 150px;
         margin-top: 26px;
         margin-left: 68px;
 
     }
 }
+
 .Shape1 {
     position: sticky;
     top: 740px;
@@ -73,7 +75,8 @@
 .Layer5 {
     top: 60px;
     right: 216px;
-animation: Layer5 12s ease 0s infinite normal none;
+    animation: Layer5 12s ease 0s infinite normal none;
+
     img {
         width: 63px;
     }
@@ -103,6 +106,7 @@ animation: Layer5 12s ease 0s infinite normal none;
     right: 130px;
     z-index: 2;
     animation: Layer8 12s ease 0s infinite normal none;
+
     img {
         width: 110px;
     }
@@ -112,7 +116,8 @@ animation: Layer5 12s ease 0s infinite normal none;
     top: 505px;
     left: 25px;
     z-index: 1;
-animation: Bakti1 8s ease 0s infinite normal none;
+    animation: Bakti1 8s ease 0s infinite normal none;
+
     img {
         width: 70px;
     }
@@ -138,7 +143,8 @@ animation: Bakti1 8s ease 0s infinite normal none;
 .Layer4 {
     top: 642px;
     left: 545px;
-animation: Layer4 15s ease 0s infinite normal none;
+    animation: Layer4 15s ease 0s infinite normal none;
+
     img {
         width: 228px;
     }
@@ -193,21 +199,19 @@ animation: Layer4 15s ease 0s infinite normal none;
 }
 
 @keyframes Layer8 {
-0% {
-    transform: translate(0%, 0%) rotate(0deg);
-}
+    0% {
+        transform: translate(0%, 0%) rotate(0deg);
+    }
 
-// 60% {
-//     transform: translate(-70%, -70%) rotate(-90deg);
-// }
 
-60% {
-    transform: translate(-60%, -80%) rotate(-120deg);
-}
 
-100% {
-    transform: translate(0%, 0%) rotate(-360deg);
-}
+    60% {
+        transform: translate(-60%, -80%) rotate(-120deg);
+    }
+
+    100% {
+        transform: translate(0%, 0%) rotate(-360deg);
+    }
 }
 
 @keyframes Layer5 {
@@ -215,9 +219,7 @@ animation: Layer4 15s ease 0s infinite normal none;
         transform: translate(0%, 0%);
     }
 
-    // 60% {
-    //     transform: translate(47%, 60%);
-    // }
+
 
     60% {
         transform: translate(50%, 70%);
@@ -234,15 +236,16 @@ animation: Layer4 15s ease 0s infinite normal none;
 
 @keyframes Bakti1 {
     0% {
-            transform: translate(0%, 0%);
-        }
+        transform: translate(0%, 0%);
+    }
 
-        50% {
-            transform: translate(70%, 30%);
-        }
-        100% {
-            transform: translate(0%, 0%);
-        }
+    50% {
+        transform: translate(70%, 30%);
+    }
+
+    100% {
+        transform: translate(0%, 0%);
+    }
 }
 
 @keyframes Layer4 {
@@ -255,7 +258,7 @@ animation: Layer4 15s ease 0s infinite normal none;
     }
 
     75% {
-    transform: translate(-40%, 30%)
+        transform: translate(-40%, 30%)
     }
 
     100% {
