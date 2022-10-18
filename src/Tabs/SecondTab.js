@@ -17,7 +17,6 @@ const SecondTab = () => {
   const scrollHandler = (e) => {
     const refCurrent = refS.current;
     setScrollValue(refCurrent.scrollTop);
-    // console.log(refCurrent.scrollTop);
   };
 
   return (

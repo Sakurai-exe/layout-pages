@@ -24,7 +24,7 @@ const Tabs = () => {
     }
   };
   const onTouchStart = (e) => {
-    setTouchEnd(null); // otherwise the swipe is fired even with usual touch events
+    setTouchEnd(null); // в противном случае свайп запускается даже при обычных событиях касаниях!
     setTouchStart(e.targetTouches[0].clientX);
   };
   const onTouchMove = (e) => setTouchEnd(e.targetTouches[0].clientX);
@@ -44,7 +44,7 @@ const Tabs = () => {
       onTouchEnd={onTouchEnd}
       style={style}
     >
-      <FirstTab event={downIndex} coefficient={index} />
+      <FirstTab event={downIndex} coefficient={index} changeCoeff={setIndex} />
       <SecondTab />
       <ThirdTab />
     </div>

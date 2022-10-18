@@ -16,10 +16,13 @@ import Shape1 from "../pics/FirstTab/Shape1.png";
 const FirstTab = (props) => {
   let coefficientX = -1 * props.coefficient;
   let styleX = { transform: `translateX(calc(${coefficientX}*(100%))` };
+  const handleClick = () => {
+    props.changeCoeff(0);
+  };
   return (
     <div className={Style.FirstTab}>
       <div className={Style.header} style={styleX}>
-        <img src={Header} alt='header image' />
+        <img src={Header} alt='header img' onClick={handleClick} />
       </div>
       <div className={Style.Layer7}>
         <img src={Layer7} alt='background detail img' />
