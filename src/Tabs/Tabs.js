@@ -9,7 +9,6 @@ const Tabs = () => {
   const [touchStart, setTouchStart] = useState(null);
   const [touchEnd, setTouchEnd] = useState(null);
   const minSwipeDistance = 90;
-  console.log(index);
   const downIndex = () => {
     if (index > -2 && index < 1) {
       setIndex(index - 1);

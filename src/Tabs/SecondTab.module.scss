@@ -3,6 +3,11 @@
         src: url(../fonts/DINPro.ttf) format('ttf'), url(../fonts/DINPro.woff) format('woff');
 }
 
+@font-face {
+        font-family: 'Gilroy-light';
+        src: url(../fonts/Gilroy-Light.ttf) format('ttf'), url(../fonts/Gilroy-Light.woff) format('woff');
+}
+
 .SecondTab {
         width: 100%;
         position: relative;
@@ -27,48 +32,68 @@
         letter-spacing: 1.5px;
 }
 
-.scrollWrapper {
-        background-clip: content-box, padding-box;
+.title {
         position: relative;
-        top: 170px;
-        left: 73px;
-        width: 820px;
+        width: 774px;
         height: 445px;
-        overflow: auto;
+        font-family: 'Gilroy-light';
+        z-index: 9;
+        font-size: 1.5rem;
+        top: 170px;
+        left: 120px;
+        text-align: left;
+        overflow: scroll;
         overflow-x: hidden;
         direction: rtl;
-        background-color: transparent;
-}
-
-.borderWrapper {
-        position: absolute;
-        z-index: 10;
-        width: 773px;
-        height: 455px;
         border: 25px solid;
-        border-radius: 40px;
         border-color: white;
-        bottom: 78px;
-        left: 120px;
+        border-radius: 40px;
+        padding: 10px;
+        padding-top: 5px;
+        background-color: white;
+        line-height: 1.85rem;
         -webkit-box-shadow: 0px 0px 100px -17px rgba(34, 60, 80, 0.2);
         -moz-box-shadow: 0px 0px 100px -17px rgba(34, 60, 80, 0.2);
         box-shadow: 0px 0px 100px -17px rgba(34, 60, 80, 0.2);
 }
 
-.title {
+
+input[type=range] {
         position: absolute;
-        font-family: 'Gilroy-light';
-        z-index: 9;
-        font-size: 1.4rem;
-        top: 20px;
-        left: 50px;
-        text-align: left;
-        width: 725px;
-        padding: 8px;
-        padding-bottom: 16px;
-        height: auto;
-        background-color: white;
-        line-height: 1.8rem;
+        transform: rotate(90deg);
+        top: 464px;
+        left: -135px;
+        width: 433px;
+        -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+        outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 6px;
+        cursor: pointer;
+        animation: 0.2s;
+        background: #000000;
+        border-radius: 37px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+        height: 20px;
+        width: 105px;
+        border-radius: 37px;
+        background-image: url("../pics/SecondTab/btn.png");
+        background-size: cover;
+        cursor: pointer;
+        -webkit-appearance: none;
+        margin-top: -7px;
+        margin-left: -1px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+        background: #000000;
 }
 
 .Layer3C6,
@@ -82,7 +107,7 @@
 .Layer3C6 {
         top: 100px;
         left: 370px;
-        animation: Layer3C6 3s ease 1s infinite normal none;
+        animation: Layer3C6 3s ease 0s infinite normal none;
 
         img {
                 width: 650px;
@@ -129,48 +154,9 @@
         }
 }
 
+
 ::-webkit-scrollbar {
-        display: block;
-        width: 20px;
-        height: 50px;
-}
-
-::-webkit-scrollbar-button {
-        width: 20px;
-        height: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-        background: #e16aa2;
-        background-clip: content-box;
-        border: 6px solid #ff6aa2;
-        border-radius: 100px;
-}
-
-
-::-webkit-scrollbar-track {
-        margin-top: 5px;
-        margin-bottom: -15px;
-        background: #000000;
-        border: 7px solid transparent;
-        background-clip: content-box;
-        border-radius: 100px;
-}
-
-::-webkit-scrollbar-track:hover {
-        background: #000000;
-        border: 7px solid transparent;
-        background-clip: content-box;
-}
-
-::-webkit-scrollbar-track:active {
-        background: #000000;
-        border: 7px solid transparent;
-        background-clip: content-box;
-}
-
-::-webkit-scrollbar-corner {
-        background: transparent;
+        display: none;
 }
 
 @keyframes Layer3C6 {
